@@ -9,11 +9,12 @@ body{
 header{
   width:100%;
   min-width:1180px;
+  height:150px;
   
 }
 header > .nav{
   width:1170px;
-  padding:0px 20px 0px 20px
+  padding:0px 20px 0px 20px;
   height:120px;
   margin: auto;
   flex:content;
@@ -60,23 +61,65 @@ header > .nav > .wrap > .category > li i{
 }
 /*header-end*/
 
-.slide_image{
-  max-width:1180px;
-  margin:0 auto;
-  position:relative;
-}
 .container{
   width:100%;
-  min-width:1180px;
+  min-width:1170px;
+  height:700px;
 }
-.container > .banner_slider{
-  margin-bottom:30px;
-}
-.slide{
-  width:1180px;
-  height:520px;
-  border: 1px solid gray;
+.container > #imgSlide{
+  width:1170px;
+  height:500px;
+  position:relative;
   margin:auto;
+  overflow:hidden;
+}
+.container > #imgSlide >  .imgs{
+width:300%;
+height:500px;
+position:absolute;
+top:0; left:0;
+background-color:#000;
+}
+.imgs > img{
+  width:1170px;
+  float:left;
+}
+#imgSlide > button{
+  border:none;
+  outline:none;
+  background-color:transparent;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  cursor:pointer;
+  opacity:0.5;
+  transition:all 0.3s;
+  z-index:999;
+}
+#imgSlide > button:hover{
+  border:none;
+  outline:none;
+  background-color:transparent;
+  opacity:1;
+  transition:all 0.2s;
+}
+#imgSlide > .next{
+  right:0;
+}
+.hot_clip{
+  width:1170px;
+  height:535px;
+  border: 1px solid gray;
+  margin:0 auto;
+  box-sizing: border-box;
+  position:relative;
+  margin-bottom:120px;
+}
+.keyword{
+  width:1170px;
+  height:535px;
+  border: 1px solid gray;
+  margin:0 auto;
   box-sizing: border-box;
   position:relative;
   margin-bottom:30px;
@@ -130,6 +173,7 @@ header > .nav > .wrap > .category > li i{
   max-width:1200px;
   height:1440px;
   margin:auto;
+  margin-top:150px;
 }
 .article h2{
   font-size:24px;
@@ -161,7 +205,7 @@ header > .nav > .wrap > .category > li i{
 .payment{
   width:100%;
   min-width:1180px;
-  height:380px;
+  height:500px;
   margin:auto;
   text-align:center;
   padding:90px;

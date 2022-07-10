@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+  <title>sub_page1</title>
+  <!--폰트어썸 CDN-->
+  <script src="https://kit.fontawesome.com/48883118f7.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><!--제이쿼리 라이브러리-->   
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!--외부정의 css-->
+  <link href="real_time_style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+	</head>
+  <script src="script/sub_custom.js"></script>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="top">
+          <ul class="client">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">이용권</a></li>
+            <li><a href="#">캐시충전</a></li>
+            <li><a href="#">무료충전소</a></li>
+          </ul>
+        </div>
+        <div class="wrap">
+          <div class="logo">
+            <img src="img/logo.png" alt="">
+          </div>
+          <ul class="category">
+            <li><a href="#">드라마</a></li>
+            <li><a href="#">연예오락</a></li>
+            <li><a href="#">스포츠</a></li>
+            <li><a href="#">교양</a></li>
+            <li><a href="#">실시간인기</a></li>
+            <li><a href="#">브랜드</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+     <div class="wrap_player">
+          <figure class="video">
+            <video id="vid">
+              <source src="media/content.mp4" type="video/mp4">
+            </video>
+            <img id="play" src="img/play.png" alt="">
+            <img id="stop" src="img/stop.png" alt="">
+        </figure>
+      <div class="today_hot_clip">
+          
+          <h2>오늘의 인기 영상</h2>
+          
+          <div class="top">
+                <ul class="item">
+                  <li><img src="img/sub_image1.png" alt=""></li>
+                  <li><img src="img/one.png" alt=""></li>
+                  <p>명언 제조기! 강 훈련사의 어록모음 
+                    KBS 220516 방송</p>
+                  
+                </ul>
+                <ul class="item">
+                    <li><img src="img/sub_image2.png" alt=""></li>
+                    <li><img src="img/two.png" alt=""></li>
+                    <p>입짧은햇님은 게살을 찢어..ㄷㄷ 밥만 7공기 
+                      넘게 먹은 햇님의 레전드 게장 먹방ㅋㅋ </p>
+                </ul>
+                <ul class="item">
+                  <li><img src="img/sub_image3.png" alt=""></li>
+                  <li><img src="img/three.png" alt=""></li>
+                  <p>[안방1열 직캠4K] 아이칠린 '꼭꼭 숨어라' 
+                    풀캠 (ICHILLIN 'Play Hide & seek</p>
+                </ul>
+                <ul class="item">
+                  <li><img src="img/sub_image4.png" alt=""></li>
+                  <li><img src="img/four.png" alt=""></li>
+                  <p>야구인 양준혁X윤석민의 칼 같은 수비에 
+                    흔들리는 엄근진 tvN 220516 방송</p>
+                </ul>
+                <ul class="item">
+                  <li><img src="img/sub_image5.png" alt=""></li>
+                  <p>‘고군분투’ 손담비, 이규혁 위해
+                    우당탕 ‘콩나물 전’ 만들기</p>
+                </ul>
+                <ul class="item">
+                  <li><img src="img/sub_image6.png" alt=""></li>
+                  <p>예측 불가 견! 라오를 무서워하는 보호자 
+                    KBS 220516 방송</p>
+                </ul>
+                <ul class="item">
+                  <li><img src="img/sub_image7.png" alt=""></li>
+                  <p>정해인+현빈+차은우 다 보이는 멋진
+                    수학 선생님 등장!</p>
+                </ul>
+                <ul class="item">
+                  <li><img src="img/sub_image8.png" alt=""></li>
+                  <p>오늘부터 덕질 시작 하모나이즈 
+                    ‘Believer’
+                  </p>
+                </ul>
+              </div>
+              <button class="prev" type="button">
+                <img src="img/prev.png" alt="">
+              </button>
+              <button class="next" type="button">
+                <img src="img/next.png" alt="">
+              </button>
+          </div>
+      </div>
+      <div class="real_time_hot_clip">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/real_time_popular/real_time_image1.png"></div>
+            <div class="swiper-slide"><img src="img/real_time_popular/real_time_image2.png"></div>
+            <div class="swiper-slide"><img src="img/real_time_popular/real_time_image3.png"></div>
+            <div class="swiper-slide"><img src="img/real_time_popular/real_time_image4.png"></div>
+            <div class="swiper-slide"><img src="img/real_time_popular/real_time_image5.png"></div>
+            <div class="swiper-slide"><img src="img/real_time_popular/real_time_image6.png"></div>
+            <div class="swiper-slide"><img src="img/real_time_popular/real_time_image7.png"></div>
+            <div class="swiper-slide"><img src="img/real_time_popular/real_time_image8.png"></div>
+          </div>
+        
+          <!-- 네비게이션 -->
+          <div class="swiper-button-next"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+          <div class="swiper-button-prev"></div><!-- 이전 버튼 -->
+        
+      </div>
+    </main>
+    <footer>
+      <div class="wrap">
+        <ul class="top">
+          <li><strong>대표번호 1668-2370</strong></li>
+          <li>평일 10:00 ~ 17:00</li>
+          <li>점심시간 12:30 ~ 13:30</li>
+          <li>주말 및 공휴일 휴무</li>
+          <dl class="noti">
+            <dt><a href="#">[공지사항]</a></dt>
+            <dd><a href="#">[공지] 5월 10일 (화) 고객센터 전화상담 휴무 안내</a></dd>
+          </dl>
+        </ul>
+        
+        <div class="footmenu">
+          <ul class="left"> 
+              <li>회사소개</li>
+              <li>광고/제휴문의</li>
+              <li>이용약관</li>
+              <li>이메일 무단 수집 거부</li>
+              <li><strong>개인정보처리방침</strong></li>
+              <li>고객센터</li>
+          </ul>
+          <div class="right">
+              <select>
+                  <option value="0">FAMILY SITE</option>
+                  <option value="1">GOM &amp; COMPANY</option>
+                  <option value="2">GOM Lab</option>
+              </select>
+              <ul class="sns">
+                  <li><img src="img/footer/ico_face.png" alt=""></li>
+                  <li><img src="img/footer/ico_twi.png" alt=""></li>
+              </ul>
+          </div> 
+          
+          <ul class="biz">
+            <li>곰앤컴퍼니 주식회사</li>
+            <li>대표이사 : 이병기</li>
+            <li>주소 : 서울시 강남구 개포로 216</li>
+          </ul>
+          <ul class="biz">
+            <li>사업자등록번호 120-81-86669</li>
+            <li>통신판매업 신고번호 : 강남 01922호</li>
+            <li>청소년 보호 책임자 : 김광섭</li>
+            <li>기사배열 원칙 책임자 : 김광섭</li>
+          </ul>
+      </div>
+    </footer>
+  </body>
+</html>

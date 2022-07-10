@@ -5,9 +5,11 @@
   <title>index</title>
   <!--폰트어썸 CDN-->
   <script src="https://kit.fontawesome.com/48883118f7.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><!--제이쿼리 라이브러리-->   
   <!--외부정의 css-->
   <link href="style.css" rel="stylesheet">
-	<script ></script>
+  <script src="script/custom.js"></script>
+	
 	</head>
   <body>
     <header>
@@ -38,14 +40,22 @@
       </div>
     </header>
     <main class="container">
-        <div class="container">
-          <section class="banner_slider">
-            <div class="slide_image">
-            <img src="img/dog_is_great.png" alt="" width="1180px" height="500px">
-            </div>
-          </section>
-
-        <section class="slide hot_clip">
+      <div id="imgSlide">
+        <button class="prev" type="button">
+          <img src="img/prev.png" alt="">
+        </button>
+        <button class="next" type="button">
+          <img src="img/next.png" alt="">
+        </button>
+        <div class="imgs">
+          <img src="img/dog_is_great.png" alt="" width="1170px" height="500px">
+          <img src="img/running_man.png" alt="" width="1170px" height="500px">
+          <img src="img/you_are_destiny.png".jpg" alt="" width="1170px" height="500px">
+        </div>
+      </div>
+    </main>
+          
+    <section class="slide hot_clip">
             <div class="text">
               <h2>#요일별 인기 프로그램</h2>
             </div>
@@ -61,12 +71,6 @@
                   <img src="img/slide1/hot_clip2.jpg" alt="" width="455px" height="200px">
                 </div>
               </div>
-              <button class="prev" type="button">
-                <img src="img/prev.png" alt="">
-              </button>
-              <button class="next" type="button">
-                <img src="img/next.png" alt="">
-              </button>
             </div>
         </section> 
         <section class="slide keyword">
@@ -85,19 +89,14 @@
                 <img src="img/slide2/childrensday2.jpg" alt="" width="455px" height="200px">
               </div>
             </div>
-            <button class="prev" type="button">
-              <img src="img/prev.png" alt="">
-            </button>
-            <button class="next" type="button">
-              <img src="img/next.png" alt="">
-            </button>
+
           </div>
         </section>
         <section class="article">
           <div class="text">
             <h2>#최신 인기 클립</h2>
           </div>
-          <section class="container2">
+        <section class="container2">
                 <ul class="item">
                   <li><img src="img/hot_clip1.png" alt=""></li>
                   <li><p>[Queen's Land] 오늘 촬영 여기서 접어.. 내일 없는 우주소녀
@@ -158,8 +157,9 @@
                   <li><p>해골+악마가 나온 영탁의 연애운 타로카드
                     앞으로도 일만 열심히 하게 될 준수(?)</p></li>
                 </ul>
-        </section>
-        <section class="payment">
+            </section>
+    </section>
+    <section class="payment">
                 <ul class="guide">
                   <li><img src="img/logo.png" alt=""></li>
                   <li>캐시충전으로 곰TV의 모든 컨텐츠를 <br>
@@ -216,3 +216,4 @@
        </div>
     </footer>
   </body>
+</html>
